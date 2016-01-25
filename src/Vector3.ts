@@ -39,6 +39,10 @@ export module Vector {
             return Math.sqrt(this.magnitude);
         }
 
+        get array():Array<number> {
+            return this.points;
+        }
+
         toString():string {
             return 'vec3:(' + this.points.join(', ') + ')';
         }
@@ -77,7 +81,7 @@ export module Vector {
             ]);
         }
 
-        // -- Opperators
+        // -- Comparators
 
         eq(b:Three):boolean {
             return this.x === b.x && this.y === b.y && this.z === b.z;
@@ -87,7 +91,7 @@ export module Vector {
             return !this.eq(b);
         }
 
-        // -- Functions
+        // -- Methods
 
         multiply(b:Three):Three {
             return new Three([
