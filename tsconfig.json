@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "removeComments": true,
+        "module": "umd",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": false,
+		"outDir": "bin/",
+        "emitBOM": true,
+		"project": "src/**/*.ts"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
