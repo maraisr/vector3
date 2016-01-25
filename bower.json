@@ -1,0 +1,25 @@
+{
+	"name": "vector3",
+	"description": "Vector3 Class object for working with vectors.",
+	"main": "bin/Vector3.js",
+	"authors": [
+		"Marais Rossouw"
+	],
+	"license": "MIT",
+	"keywords": [
+		"vector",
+		"vector3",
+		"math"
+	],
+	"homepage": "https://github.com/maraisr/vector3.ts",
+	"moduleType": [
+		"amd"
+	],
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}

@@ -1,7 +1,6 @@
 {
 	"name": "vector3.ts",
 	"scripts": {
-		"dev": "ntsc --watch",
 		"build": "ntsc"
 	},
 	"dependencies": {

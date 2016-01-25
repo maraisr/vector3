@@ -7,10 +7,10 @@ Vector 3
 var myVectorOne = new Vector.Three([1,2,3]),
     myVectorTwo = new Vector.Three([3,4,5]);
 
-myVectorOne.angle(myVectorTwo).toString() // -> 0.18623876586484955
-myVectorOne.add(myVectorTwo).toString() // -> vec3:(4, 6, 8)
-myVectorOne.multiplyScalar(2).array // -> [ 2, 4, 6 ] *JavaScript Array primitive*
-myVectorOne.eq(myVectorTwo) // -> false
+myVectorOne.angle(myVectorTwo).toString() // 0.18623876586484955
+myVectorOne.add(myVectorTwo).toString() // vec3:(4, 6, 8)
+myVectorOne.multiplyScalar(2).array // [ 2, 4, 6 ] *JavaScript Array primitive*
+myVectorOne.eq(myVectorTwo) // false
 ```
 
 ### Variables
