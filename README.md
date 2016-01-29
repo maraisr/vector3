@@ -48,7 +48,10 @@ angle // Calcualtes the angle between vector a and vector b
 dot // Dot product of a and b
 cross // Cross product of vector a and b
 distance // The distance between vector a and vector b
-reflect // The reflection vector of a
+negate // The negative vector of a
+abs // The absolute vector of a
+refelct // Invert values
+lerp // Interpolate values
 ```
 
 ### Static Methods
@@ -80,6 +83,10 @@ myVectorOne.angle(myVectorTwo); // 0.18623876586484955
 myVectorOne.dot(myVectorTwo); // 26
 myVectorOne.cross(myVectorTwo).toString(); // vec3:(-2, 4, -2)
 myVectorOne.distance(myVectorTwo); // 3.4641016151377544
+myVectorOne.negate().toString() // vec3:(-1, -2, -3)
+myVectorOne.abs().toString() // vec3:(1, 2, 3)
+myVectorOne.reflect().toString() // vec3:(-1, -2, -3)
+myVectorOne.lerp(myVectorTwo, 5).toString() // vec3:(11, 12, 13)
 
 Vector.Three.max(myVectorOne, myVectorTwo).toString(); //vec3:(3, 4, 5)
 Vector.Three.min(myVectorOne, myVectorTwo).toString(); // vec3:(1, 2, 3)

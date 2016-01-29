@@ -132,12 +132,29 @@
                 var dx = this.x - b.x, dy = this.y - b.y, dz = this.z - b.z;
                 return Math.sqrt(dx * dx + dy * dy + dz * dz);
             };
+            Three.prototype.negate = function () {
+                return new Three([
+                    (-1 * Math.abs(this.x)),
+                    (-1 * Math.abs(this.y)),
+                    (-1 * Math.abs(this.z))
+                ]);
+            };
+            Three.prototype.abs = function () {
+                return new Three([
+                    (Math.abs(this.x)),
+                    (Math.abs(this.y)),
+                    (Math.abs(this.z))
+                ]);
+            };
             Three.prototype.reflect = function () {
                 return new Three([
                     (-1 * this.x),
                     (-1 * this.y),
                     (-1 * this.z)
                 ]);
+            };
+            Three.prototype.lerp = function (b, a) {
+                return this.add(b.subtract(this).multiply(new Three([a, a, a])));
             };
             Three.max = function (a, b) {
                 return new Three([
@@ -157,4 +174,6 @@
         })();
         Vector.Three = Three;
     })(Vector = exports.Vector || (exports.Vector = {}));
+    var myVectorOne = new Vector.Three([1, 2, 3]), myVectorTwo = new Vector.Three([3, 4, 5]);
+    console.log(myVectorOne.lerp(myVectorTwo, 5).toString());
 });

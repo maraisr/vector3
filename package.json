@@ -1,9 +1,6 @@
 {
 	"name": "vector3.ts",
 	"scripts": {
-		"build": "ntsc"
-	},
-	"dependencies": {
-		"ntypescript": "^1.201601242203.1"
+		"build": "tsc"
 	}
 }
