@@ -1,6 +1,6 @@
 {
   "name": "vek3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript basic vector 3 library",
   "main": "dist/Vector3.js",
   "scripts": {
