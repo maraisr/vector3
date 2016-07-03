@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "TypeScript basic vector 3 library",
   "main": "dist/Vector3.js",
-  "bin": {
-    "vek3": "Vector3.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
