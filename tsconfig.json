@@ -5,11 +5,11 @@
         "target": "es5",
         "noImplicitAny": true,
         "sourceMap": false,
-		"outDir": "bin/",
+		"outDir": "dist/",
         "emitBOM": true,
-		"project": "src/**/*.ts"
+		"declaration": true
     },
-    "exclude": [
-        "node_modules"
-    ]
+	"files":[
+		"src/Vector3.ts"
+	]
 }

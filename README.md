@@ -1,9 +1,8 @@
 Vector 3
 ========
-[![Bower version](https://badge.fury.io/bo/vector3.svg)](https://github.com/maraisr/vector3)
 
 ## Installation
-`bower i vector3 --save`
+`npm i vek3 --save`
 
 ## Example Usuage
 ```JavaScript

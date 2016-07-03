@@ -180,8 +180,3 @@ export module Vector {
 		}
 	}
 }
-
-var myVectorOne = new Vector.Three([1, 2, 3]),
-	myVectorTwo = new Vector.Three([3, 4, 5]);
-
-console.log(myVectorOne.lerp(myVectorTwo, 5).toString());
